@@ -33,7 +33,7 @@ export const Footer = () => {
             <Github size={20} />
           </a>
           <a
-            href="https://instagram.com/your-instagram"
+            href="https://instagram.com/utkarshbothe"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
@@ -41,7 +41,7 @@ export const Footer = () => {
             <Instagram size={20} />
           </a>
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/919421782297"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
@@ -62,7 +62,7 @@ export const Footer = () => {
       {/* Bottom Section - Copyright */}
       <div className="text-center mt-6 border-t border-border pt-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} UtkarshBothe.com — All Rights Reserved.
+          &copy; {new Date().getFullYear()} Utkarsh Bothe — All Rights Reserved.
         </p>
       </div>
     </footer>

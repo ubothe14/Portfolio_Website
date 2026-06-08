@@ -51,6 +51,7 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
+          
         </div>
 
         {/* mobile nav */}
@@ -89,3 +90,6 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+
+

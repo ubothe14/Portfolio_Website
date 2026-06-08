@@ -157,44 +157,161 @@
 
 
 
-import { useState } from "react";
-import { cn } from "@/lib/utils";
 
-// Updated Skills List
-const skills = [
-  // Languages
-  { name: " C++", category: "languages" },
-  { name: "JavaScript", category: "languages" },
-  { name: "SQL", category: "languages" },
-  { name: "Python", category: "languages" },
+
+
+
+
+
+
+// import { useState } from "react";
+// import { cn } from "@/lib/utils";
+
+// // Updated Skills List
+// const skills = [
+//   // Languages
+//   { name: " C++", category: "languages" },
+//   { name: "JavaScript", category: "languages" },
+//   { name: "SQL", category: "languages" },
+//   { name: "Python", category: "languages" },
  
   
 
+//   // Frameworks & Libraries
+//   { name: "React", category: "frameworks" },
+//   { name: "Tailwind CSS", category: "frameworks" },
+//   { name: "Node.js", category: "frameworks" },
+//   { name: "Express", category: "frameworks" },
+//   { name: "Pandas", category: "frameworks" },
+//   { name: "NumPy", category: "frameworks" },
+//   { name: "Matplotlib", category: "frameworks" },
+//   { name: "Seaborn", category: "frameworks" },
+
+
+
+//   // Tools & Utilities
+//   //Power BI, MySQL, Git & GitHub, Postman, MongoDB Compass, JIRA
+//   { name: "Git/GitHub", category: "tools" },
+//   { name: "MySQL", category: "tools" },
+//   { name: "Power BI", category: "tools" },
+//   { name: "JIRA", category: "tools" },
+//   { name: "MongoDB Compass", category: "tools" },
+//   { name: "Docker", category: "tools" },
+//   { name: "VS Code", category: "tools" },
+//   { name: "Jupyter Lab", category: "tools" },
+
+
+// ];
+
+// const categories = ["all", "languages", "frameworks", "tools"];
+
+// export const SkillsSection = () => {
+//   const [activeCategory, setActiveCategory] = useState("all");
+
+//   const filteredSkills = skills.filter(
+//     (skill) => activeCategory === "all" || skill.category === activeCategory
+//   );
+
+//   return (
+//     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
+//       <div className="container mx-auto max-w-5xl">
+//         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+//           My <span className="text-primary"> Skills</span>
+//         </h2>
+
+//         {/* Category Buttons */}
+//         <div className="flex flex-wrap justify-center gap-4 mb-12">
+//           {categories.map((category, key) => (
+//             <button
+//               key={key}
+//               onClick={() => setActiveCategory(category)}
+//               className={cn(
+//                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+//                 activeCategory === category
+//                   ? "bg-primary text-primary-foreground"
+//                   : "bg-secondary/70 text-foreground hover:bg-secondary"
+//               )}
+//             >
+//               {category === "frameworks"
+//                 ? "Frameworks & Libraries"
+//                 : category === "tools"
+//                 ? "Tools & Utilities"
+//                 : category.charAt(0).toUpperCase() + category.slice(1)}
+//             </button>
+//           ))}
+//         </div>
+
+//         {/* Skills Grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {filteredSkills.map((skill, key) => (
+//             <div
+//               key={key}
+//               className="bg-card p-6 rounded-lg shadow-xs card-hover text-center"
+//             >
+//               <h3 className="font-semibold text-lg">{skill.name}</h3>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+
+
+
+
+
+
+
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+
+import {
+  SiReact,
+  SiJavascript,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiPython,
+  SiMysql,
+  SiDocker,
+  SiGit,
+  SiJira,
+  SiCplusplus,
+} from "react-icons/si";
+
+import { VscVscode } from "react-icons/vsc";
+import { TbChartBar, TbTable } from "react-icons/tb";
+
+const skills = [
+  // Languages
+  { name: "C++", icon: SiCplusplus, category: "languages" },
+  { name: "JavaScript", icon: SiJavascript, category: "languages" },
+  { name: "Python", icon: SiPython, category: "languages" },
+  { name: "SQL", icon: SiMysql, category: "languages" },
+
   // Frameworks & Libraries
-  { name: "React", category: "frameworks" },
-  { name: "Tailwind CSS", category: "frameworks" },
-  { name: "Node.js", category: "frameworks" },
-  { name: "Express", category: "frameworks" },
-  { name: "Pandas", category: "frameworks" },
-  { name: "NumPy", category: "frameworks" },
-  { name: "Matplotlib", category: "frameworks" },
-  { name: "Seaborn", category: "frameworks" },
+  { name: "React", icon: SiReact, category: "frameworks" },
+  { name: "Node.js", icon: SiNodedotjs, category: "frameworks" },
+  { name: "Express", icon: SiExpress, category: "frameworks" },
+  { name: "MongoDB", icon: SiMongodb, category: "frameworks" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, category: "frameworks" },
+  { name: "Pandas", icon: TbTable, category: "frameworks" },
+  { name: "NumPy", icon: TbTable, category: "frameworks" },
+  { name: "Matplotlib", icon: TbChartBar, category: "frameworks" },
+  { name: "Seaborn", icon: TbChartBar, category: "frameworks" },
 
-
-
-  // Tools & Utilities
-  //Power BI, MySQL, Git & GitHub, Postman, MongoDB Compass, JIRA
-  { name: "Git/GitHub", category: "tools" },
-  { name: "MySQL", category: "tools" },
-  { name: "Power BI", category: "tools" },
-  { name: "JIRA", category: "tools" },
-  { name: "MongoDB Compass", category: "tools" },
-  { name: "Docker", category: "tools" },
-  { name: "VS Code", category: "tools" },
-  { name: "Jupyter Lab", category: "tools" },
-
-
+  // Tools
+  { name: "Git", icon: SiGit, category: "tools" },
+  { name: "Docker", icon: SiDocker, category: "tools" },
+  { name: "MySQL", icon: SiMysql, category: "tools" },
+  { name: "Power BI", icon: TbChartBar, category: "tools" },
+  { name: "JIRA", icon: SiJira, category: "tools" },
+  { name: "VS Code", icon: VscVscode, category: "tools" },
 ];
+
 
 const categories = ["all", "languages", "frameworks", "tools"];
 
@@ -202,50 +319,64 @@ export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) =>
+      activeCategory === "all" || skill.category === activeCategory
   );
 
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+    <section id="skills" className="py-24 px-4 relative">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+          My <span className="text-primary">Skills</span>
         </h2>
 
         {/* Category Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category, key) => (
+          {categories.map((category) => (
             <button
-              key={key}
+              key={category}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-all duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
+                  : "bg-secondary/50 hover:bg-secondary"
               )}
             >
               {category === "frameworks"
                 ? "Frameworks & Libraries"
                 : category === "tools"
                 ? "Tools & Utilities"
-                : category.charAt(0).toUpperCase() + category.slice(1)}
+                : category}
             </button>
           ))}
         </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
-            <div
-              key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover text-center"
-            >
-              <h3 className="font-semibold text-lg">{skill.name}</h3>
-            </div>
-          ))}
+        {/* Skills Container */}
+        <div className="rounded-3xl border border-white/10 bg-card/30 backdrop-blur-sm p-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredSkills.map((skill) => {
+              const Icon = skill.icon;
+
+              return (
+                <div
+                  key={skill.name}
+                  className="flex items-center gap-4 p-4 rounded-2xl border border-white/10 bg-background/30 hover:border-primary/50 transition-all duration-300 hover:scale-105"
+                >
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl border border-white/10 bg-background">
+                    <Icon className="text-2xl text-primary" />
+                  </div>
+
+                  <span className="font-medium text-lg">
+                    {skill.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
   );
 };
+

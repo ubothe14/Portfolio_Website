@@ -393,8 +393,10 @@ export const ContactSection = () => {
     const formData = new FormData(e.target);
 
     // ✅ Use environment variable from .env
-    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
-
+    formData.append(
+  "access_key",
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+);
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

@@ -111,34 +111,36 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Side Text */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Software Engineering Student & Web Developer
-            </h3>
+            
+          
 
-            <p className="text-muted-foreground">
-              I’m a 3rd-year Software Engineering student at VIIT Pune,
-              currently focusing on <strong>Web Development</strong> and{" "}
-              <strong>Data Structures & Algorithms (DSA)</strong>.  
-              I enjoy turning ideas into real-world projects that are simple,
-              functional, and impactful.
-            </p>
+<h3 className="text-2xl font-semibold">
+  Software Engineering Student & Full Stack Developer
+</h3>
 
-            <p className="text-muted-foreground">
-              Apart from coding, I’m exploring{" "}
-              <strong>Machine Learning, and Data Analytics</strong>  
-              
-              through academic projects and hackathons.  
-              My goal is to build strong problem-solving and full-stack
-              development skills to excel in internships and placements.
-            </p>
+<p className="text-muted-foreground">
+  I’m a 4th-year Software Engineering student at VIIT Pune with a strong
+  interest in Full Stack Development. I enjoy building scalable, responsive,
+  and user-friendly web applications using modern technologies.
+</p>
+
+<p className="text-muted-foreground">
+  Beyond development, I’m exploring
+  <strong> Machine Learning and Data Analytics </strong>
+  through projects and hackathons. I’m passionate about continuous learning,
+  solving real-world problems, and building impactful software products.
+</p>
+
+
+
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
                 Get In Touch
               </a>
 
-              <a
-  href="/Utkarsh Bothe_Resume.pdf"
+            <a
+  href="/Resume_Utkarsh_010626.pdf"
   download="Utkarsh Bothe_Resume.pdf"
   className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
 >
@@ -156,10 +158,10 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <h4 className="font-semibold text-lg">Full Stack Development</h4>
                   <p className="text-muted-foreground">
-                    Building modern, responsive websites using HTML, CSS,
-                    JavaScript, React, and Tailwind CSS.
+                    
+Building scalable web applications using React, Node.js, Express, MongoDB, and modern web technologies.
                   </p>
                 </div>
               </div>
@@ -171,10 +173,10 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Problem Solving</h4>
+                  <h4 className="font-semibold text-lg">Software Engineering</h4>
                   <p className="text-muted-foreground">
-                    Practicing DSA on LeetCode & HackerRank to strengthen logic,
-                    algorithms, and placement readiness.
+                   
+Applying software engineering principles, clean code practices, and modern development workflows to build reliable applications.
                   </p>
                 </div>
               </div>
@@ -186,10 +188,9 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Projects & Hackathons</h4>
+                  <h4 className="font-semibold text-lg">Real-World Solutions</h4>
                   <p className="text-muted-foreground">
-                    Actively working on full-stack projects, ML-based apps, and
-                    participating in hackathons to gain real-world experience.
+Building practical applications that address real-world challenges through modern software development and emerging technologies.
                   </p>
                 </div>
               </div>

@@ -132,20 +132,20 @@ const projects = [
     title: "Fitverse - Fitness Web App",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
+    image: "src/assets/image2.png",
     tags: ["React JS", "Javascript", "MongoDB", "Node.js", "ExpressJs", "TailwindCSS"],
     demoUrl: "/in-progress", // internal
-    githubUrl: "#",
+    githubUrl: "/in-progress",
   },
   {
     id: 3,
     title: "E-commerce Platform",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
+    image: "src/assets/image3.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "/in-progress", // internal
-    githubUrl: "#",
+    githubUrl: "/in-progress",
   },
 ];
 
