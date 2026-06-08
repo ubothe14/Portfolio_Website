@@ -122,7 +122,7 @@ const projects = [
     id: 1,
     title: "Streamify",
     description: "Real-time chat application with video calling features.",
-    image: "src/assets/image.png", // Update the path to your local image
+    image: "/image1.png", // Update the path to your local image
     tags: ["React JS", "TailwindCSS", "MongoDB", "Node.js", "ExpressJs"],
     demoUrl: "https://socialize-app-dzyh.onrender.com/", // external
     githubUrl: "https://github.com/ubothe14/socialize_app",
@@ -132,7 +132,7 @@ const projects = [
     title: "Fitverse - Fitness Web App",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "src/assets/image2.png",
+    image: "/image2.png",
     tags: ["React JS", "Javascript", "MongoDB", "Node.js", "ExpressJs", "TailwindCSS"],
     demoUrl: "/in-progress", // internal
     githubUrl: "/in-progress",
@@ -142,7 +142,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "src/assets/image3.png",
+    image: "/image3.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "/in-progress", // internal
     githubUrl: "/in-progress",
